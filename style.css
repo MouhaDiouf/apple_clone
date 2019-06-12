@@ -1,0 +1,39 @@
+
+
+.container {
+    background: blue;
+    width: 80%;
+    margin: 0px auto;
+    height: 400px;
+}
+
+nav {
+position: relative;
+width: 80%;
+background:green;
+margin: 0 auto;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+nav li {
+    
+    width: 11%;
+    list-style-type: none;
+}
+
+.apple-logo {
+    width: 21px;
+}
