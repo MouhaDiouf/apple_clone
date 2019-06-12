@@ -1,10 +1,28 @@
 
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
 .container {
-    background: blue;
-    width: 80% auto;
-    margin-top: 0;
-    height: 400px;
-    background: url('images/your_verse_hero.jpg') no-repeat center;
+    width: 80%;
+    height: 538px;
+    background-image: url('images/your_verse_hero.jpg');
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -16,8 +34,9 @@ height: 36px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-top: 2em;
+top: 5em;
 color: white;
+z-index: 2;
 border-radius:4px;
 }
 
@@ -63,4 +82,35 @@ nav .text, nav .logo {
 
 .nav-item input {
     margin: 0 15px;
+}
+
+/* PROMOS */
+.promos {
+    width: 80%;
+    position: absolute;
+    top: 540px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    height: 200px;
+}
+.promo {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+.iphone-5s {
+    background: url('images/promo_iphone5s.jpg') no-repeat center;
+}
+
+.iphone-5c {
+    background: url('images/promo_iphone5c.jpg') no-repeat center;
+}
+
+.mac {
+    background: url('images/promo_30_years.jpg')
+}
+
+.supplier {
+    background: url('images/promo_supplier_responsibility.jpg')
 }
