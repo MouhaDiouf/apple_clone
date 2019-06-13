@@ -9,7 +9,7 @@ body {
     width: 80%;
     height: 538px;
     background-image: url('images/your_verse_hero.jpg');
-    background-position: center; /* Center the image */
+    background-position: 50% 100%; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; 
     position: absolute;
@@ -22,8 +22,44 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
     
 
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: center;
+}
+
+h1 a, h2 a { 
+    text-decoration: none;
+    color: white;
+}
+
+.watch-film {
+    display: flex;
+    align-items: center;
+}
+.watch-film a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.watch-film a:hover {
+    border-bottom: 1px solid white;
+}
+
+.watch-film  .fa-play-circle {
+    font-size: 2rem;
+    margin-left: 8px;
 }
 
 nav {
@@ -52,8 +88,8 @@ nav, nav input {
     font-size: 14px;
 }
 
-.logo:hover,
-.text:hover{
+nav .logo:hover,
+nav .text:hover{
     background: #3b3b3b;
     cursor: pointer;
 }
@@ -98,19 +134,66 @@ nav .text, nav .logo {
     width: 25%;
     float: left;
     height: 100%;
-}
-.iphone-5s {
-    background: url('images/promo_iphone5s.jpg') no-repeat center;
+    
 }
 
-.iphone-5c {
-    background: url('images/promo_iphone5c.jpg') no-repeat center;
+
+
+/* Footer */
+
+footer {
+    margin: 0px auto;
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    top: 705px;
 }
 
-.mac {
-    background: url('images/promo_30_years.jpg')
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 20px;
 }
 
-.supplier {
-    background: url('images/promo_supplier_responsibility.jpg')
+.right, .left {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.right .text {
+    border-right: 1px gray solid;
+    text-align: center;
+}
+
+.right a {
+    padding: 5px;
+}
+
+.right img {
+    width: 17px;
+    padding-left: 8px;
+}
+
+.logo {
+    border: none;
+}
+
+footer a {
+    text-decoration: none;
+    color:#08c;
+}
+
+.copyright {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+footer .right li:hover {
+    border-bottom: 1px solid #08c;
 }
