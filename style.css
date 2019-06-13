@@ -86,17 +86,26 @@ nav, nav input {
 nav .fa-search {
     position: absolute;
     left: 23px;
+
 }
 
 nav input {
     width: 80px;
-    transition: width .5s ease;
+    transition: width .2s ease-in;
+    padding-left: 25px;
+
 }
 
 nav input:focus {
-    width: 150px;
-    background: white;
+width: 150px;
+background: white;
 transition: width .5s ease;
+padding-left: 27px;
+
+}
+
+.search:focus-within {
+    color: black;
 }
 
 .nav-item{
