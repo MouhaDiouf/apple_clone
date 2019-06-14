@@ -49,6 +49,7 @@ h1 a, h2 a {
     margin: 20px auto;
     width: 45%;
     
+    
 }
 .watch-film a {
     font-size: 1.5rem;
@@ -157,20 +158,30 @@ nav .text, nav .logo {
     text-align: center;
 }
 
+.hero {
+    height: 551px;
+}
+
 /* PROMOS */
 .promos {
     width: 80%;
-    position: absolute;
-    top: 588px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
+}
+
+.promos::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
+.promo {
+    float: left;
+    width: 25%;
+}
+.promo img {
+    width: 100%;
+}
 
 /* Footer */
 
@@ -178,18 +189,29 @@ footer {
     margin: 0 auto;
     font-size: 12px;
     color: gray;
-    position: relative;
     width: 100%;
-    z-index: 9;
-    top: 738px;
+ 
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
+
+footer .wrapper {
+    width: 67%;
     margin: 0 auto;
-    padding-top: 20px;
+
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left-right::after {
+content: "";
+display: table;
+clear: both;
 }
 
 .right, .left {
@@ -220,10 +242,7 @@ footer a {
     color:#08c;
 }
 
-.copyright {
-    width: 69.1%;
-    margin: 0 auto;
-}
+
 
 
 footer a:hover {
